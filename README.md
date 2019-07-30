@@ -2,7 +2,7 @@
 A point of reference for C#
 
 ## Introduction
-##### C# vs .NET
+#### C# vs .NET
 - C#: The language
 - .NET: The framework for buuilding applications
   - CLR (Common Language Runtime)
@@ -15,7 +15,7 @@ A point of reference for C#
     
     _So, CLR is an application sitting in memory whose job it is to translate IL code to machine code (Just-In-Time Compilation, JIT)_
     
-##### Application Structure
+#### Application Structure
 - Application: made up of classes who interact at runtime
 - Assembly: Container for related namespaces, DLL or EXE
 - NameSpace: Container for related classes, i.e for working with databases, graphics, security
@@ -25,7 +25,7 @@ A point of reference for C#
   
   _When you compile an application the compiler builds one or more assembly's_
 
-##### Using Statements
+#### Using Statements
 - using System; 
   - namespace in the .NET framework
   - basic utility classes, primitive types
@@ -38,8 +38,8 @@ A point of reference for C#
 - using System.Threading.Tasks;
   - used to build multi threaded apps
   
-##### Namespaces
-```c#
+#### Namespaces
+```cs
 namespace MyProg
 {
   // code in this namespace has access to any classes defined within it
@@ -57,12 +57,24 @@ _To use a class defined in a different namespace, we must import it with a using
 |MethodName|fieldName|
 |ConstantsName||
 |PropertiesName||
-|EnumTypeName||
-
-## Data Types   
+|EnumTypeName||  
 
 ## Shortcuts & Nice Code Snippets
+#### Visual Studio shortcuts
+- `Ctrl+F5` to run application (or enable debug in the toolbar)
+- `Alt+Enter` show action list
+
+#### Code Snippets
+Format String
+```cs
+Console.WriteLine("Student name: {0}", name);
+```
+Convert input to int
+```cs
+int number = Convert.ToInt32(Console.ReadLine());
+```
 
 
-###### For Reference
+
+## For Reference
 README markdown - https://pandao.github.io/editor.md/en.html
