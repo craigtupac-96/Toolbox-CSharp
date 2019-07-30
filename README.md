@@ -2,7 +2,7 @@
 A point of reference for C#
 
 ## Introduction
-###### C# vs .NET
+##### C# vs .NET
 - C#: The language
 - .NET: The framework for buuilding applications
   - CLR (Common Language Runtime)
@@ -12,18 +12,57 @@ A point of reference for C#
     - C/C++ translate to machine code
     - Java translates to bytecode
     - C# translates to IL code (Intermediate Language)
+    
     _So, CLR is an application sitting in memory whose job it is to translate IL code to machine code (Just-In-Time Compilation, JIT)_
     
-###### Application Structure
+##### Application Structure
 - Application: made up of classes who interact at runtime
+- Assembly: Container for related namespaces, DLL or EXE
+- NameSpace: Container for related classes, i.e for working with databases, graphics, security
 - Class: 
   - Data (Attributes - make, model, colour)
   - Methods (Behaviour - Start(), Stop())
-- NameSpace: Container for related classes, i.e for working with databases, graphics, security
-- Assembly: Container for related namespaces, DLL or EXE
+  
+  _When you compile an application the compiler builds one or more assembly's_
 
-![](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi_867I3dzjAhU9SBUIHSpwAcwQjRx6BAgBEAU&url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F36033188%2Finstantiate-different-classes-with-the-same-name-namespace&psig=AOvVaw0K0VqtAa4wCdY2rD_qSwJG&ust=1564579044420883)
-    
+##### Using Statements
+- using System; 
+  - namespace in the .NET framework
+  - basic utility classes, primitive types
+- using System.Collections.Generic;
+  - work with lists, collections etc
+- using System.Linq;
+  - used to work with data
+- using System.Text;
+  - work with ASCII and Unicode character encodings
+- using System.Threading.Tasks;
+  - used to build multi threaded apps
+  
+##### Namespaces
+```c#
+namespace MyProg
+{
+  // code in this namespace has access to any classes defined within it
+}
+```
+- each namespace contains a class called Program by default. This class contains a main method.
+The CLR executes from main first.
+_To use a class defined in a different namespace, we must import it with a using statement_
+
+## Naming Conventions
+|PascalCase|camelCase|
+| -------------| -------------|
+|ClassName|methodArguments|
+|ConstructorName|localVariables|
+|MethodName|fieldName|
+|ConstantsName||
+|PropertiesName||
+|EnumTypeName||
+
+## Data Types   
 
 ## Shortcuts & Nice Code Snippets
 
+
+###### For Reference
+README markdown - https://pandao.github.io/editor.md/en.html
