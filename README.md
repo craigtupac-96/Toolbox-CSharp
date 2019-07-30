@@ -76,9 +76,9 @@ The CLR executes from main first.
   int number = Convert.ToInt32(Console.ReadLine());
   ```
 - Insert a new line
-```cs
-Console.WriteLine("{0}This is a string with a line space before it", Environment.NewLine);
-```
+  ```cs
+  Console.WriteLine("{0}This is a string with a line space before it", Environment.NewLine);
+  ```
 
 
 ## For Reference
