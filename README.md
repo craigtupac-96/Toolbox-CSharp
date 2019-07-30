@@ -47,7 +47,8 @@ namespace MyProg
 ```
 - each namespace contains a class called Program by default. This class contains a main method.
 The CLR executes from main first.
-_To use a class defined in a different namespace, we must import it with a using statement_
+
+  _To use a class defined in a different namespace, we must import it with a using statement_
 
 ## Naming Conventions
 |PascalCase|camelCase|
@@ -63,17 +64,21 @@ _To use a class defined in a different namespace, we must import it with a using
 #### Visual Studio shortcuts
 - `Ctrl+F5` to run application (or enable debug in the toolbar)
 - `Alt+Enter` show action list
-
+- `cw tab` a shortcut for `Console.WriteLine()`
+ 
 #### Code Snippets
-Format String
+- Format String
+  ```cs
+  Console.WriteLine("Student name: {0}", name);
+  ```
+- Convert input to int
+  ```cs
+  int number = Convert.ToInt32(Console.ReadLine());
+  ```
+- Insert a new line
 ```cs
-Console.WriteLine("Student name: {0}", name);
+Console.WriteLine("{0}This is a string with a line space before it", Environment.NewLine);
 ```
-Convert input to int
-```cs
-int number = Convert.ToInt32(Console.ReadLine());
-```
-
 
 
 ## For Reference
