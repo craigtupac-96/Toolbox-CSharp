@@ -1,7 +1,10 @@
 # C# Toolbox 
 A point of reference for C#
 
-[TOC]
+## Introduction
+-------------
+###### C# vs .NET
 
-##Introduction
+
+## Shortcuts & Nice Code Snippets
 
